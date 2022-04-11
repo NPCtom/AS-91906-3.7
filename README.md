@@ -1,5 +1,5 @@
 # AS-91906-3.7
-My assignment for AS 91883 – 3.7 - Develop a Computer Program.
+My assignment for AS 91906 – 3.7 - Develop a Computer Program.
 
 I developed a racing game.
 
