@@ -1,12 +1,4 @@
 # AS-91906-3.7
-####################################################
-#                                                  #
-#   AS 91906 – 3.7 - Develop a Computer Program    #
-#            Copyright 2022 Tom Tamaira            #
-#                   Car Racing Game                #
-#                                                  #
-####################################################
-
 This is a car racing game made in Python using the pygame library.
 
 The player can control this game using the left and right arrow keys.
