@@ -6,28 +6,30 @@
 #                                                  #
 ####################################################
 # Changelog:
-# Fixed high score not changing after passing an enemy car
+# Fixed score not changing after passing an enemy car
 # Game breaking testing completed. Pressing any key other than "R" and arrow keys will not break the game and result in unexpected events
 
 import random,os
 from time import sleep
 
+import pygame
+
 
 #Car class
 class Car:
     def __init__(self,path,width,height,x,y,speed=None):
-        self.img=pygame.image.load(path)#load the image of car
-        self.width=width#setting its width
-        self.height=height#setting its height
-        self.x=x#setting its x coorindate
-        self.y=y#setting its y coordinates
-        self.speed=speed#setting its speed
+        self.img=pygame.image.load(path)#Load the image of car
+        self.width=width#Setting its width
+        self.height=height#Setting its height
+        self.x=x#Setting its x coorindate
+        self.y=y#Setting its y coordinates
+        self.speed=speed#Setting its speed
 
-    #this magic method will help in changing y coordinate of car
+    #This magic method will help in changing y coordinate of car
     def __add__(self,other):
-        if type(other)==Car:#if added value belongs to car class
-            self.y=self.y+other.y#add other's y parameter to self y parameter
-        else:#other wise just add other to self y
+        if type(other)==Car:#If added value belongs to car class
+            self.y=self.y+other.y#Add other y parameter to self y parameter
+        else:#Otherwise just add other to self y
             self.y=self.y+other
 
 #Defining a car racing class
